@@ -1,0 +1,52 @@
+<!doctype HTML>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="style.css">
+<script src="jquery.js"></script>
+<script>
+ 
+    $(window).scroll(function(e){
+  parallax();
+});
+function parallax(){
+  var scrolled = $(window).scrollTop();
+  $('.background').css('top',-(scrolled*0.4)+'px');
+}
+ 
+    </script>
+</head>
+
+<body>
+	
+    <div class="background"></div>
+	<section>
+		<br>
+		<h1>Parallax Scrolling!</h1>
+		<p>Parallax is a pretty awesome.</p>
+		<p>Parallax scrolling happens when the background and content scroll at different speeds creating dimension and a cool effect.</p>
+		<p>You can add parallax scrolling to any page or element</p>
+		<p>This is the layer method of parallax scrolling</p>
+	
+		<h1>Examples of Parallax Scrolling</h1>
+		<ul>
+			<li><a href="http://crv.honda.com.au/">http://crv.honda.com.au/</a></li>
+			<li><a href="http://www.tokiolab.it/#/">http://www.tokiolab.it/#/</a></li>
+			<li><a href="http://lamoulade.com/#!/projects">http://lamoulade.com/#!/projects</a></li>
+			<li><a href="http://unfold.no/">http://unfold.no/</a></li>
+			<li><a href="http://lostworldsfairs.com/atlantis/">http://lostworldsfairs.com/atlantis/</a></li>
+			<li><a href="http://www.arnoldclark.com/challenge/">http://www.arnoldclark.com/challenge/</a></li>
+			<li><a href="http://neomam.com/interactive/13reasons/">http://neomam.com/interactive/13reasons/</a></li>
+			<li><a href="http://www.the-bea.st/">http://www.the-bea.st/</a></li>
+			<li><a href="http://www.dementialab.org/discovery-lab/">http://www.dementialab.org/discovery-lab/</a></li>
+			<li><a href="http://cyclemon.com/">http://cyclemon.com/</a></li>
+			<li><a href="http://www.michelbergerbooze.com/">http://www.michelbergerbooze.com/</a></li>
+		</ul>
+		<h1>Pigs</h1>
+		<img alt="pigs" src="http://pubpages.unh.edu/~cdm38/images/pigs.jpg" width="500px" />  
+		<img alt="pigs" src="http://4.bp.blogspot.com/-FHmU4T9habw/UaQRBvM02DI/AAAAAAAAAgQ/Hk7VWCrQj70/s320/baby+pigs.jpg" width="500px"/> 
+		
+	</section>
+	
+	
+</body>
+</html>
