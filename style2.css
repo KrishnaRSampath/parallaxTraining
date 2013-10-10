@@ -1,18 +1,22 @@
 /*** Style Definitions ***/
 html{ 
 	background:#67b2ff; 
+	;
 	font-family:Arial, Helvetica, sans-serif; 
 }
  
 /*** Header ***/
 h1#logo{ 
-	background:url(../parallaxTraining/Logo.png) top left no-repeat; 
+	/*background:url(../parallaxTraining/Logo.png) top left no-repeat; */
+	color: black;
 	height:62px; 
 	width:481px;
-	text-indent:-9999px; 
+	font-family: 'Lily Script One';
+	font-size: 38px;
 	position:absolute; 
 	top:10px; 
 	left:10px; 
+	z-index: 10;
 }
  
 #menu{ 
@@ -56,7 +60,9 @@ h1#logo{
 	position:absolute; 
 	top:0; 
 	left:0; 
-	overflow:hidden; 
+	overflow:hidden;
+	background-image: url(../parallaxTraining/background.png);
+	z-index: -4; 
 }
  
 #mask{ 
@@ -75,6 +81,22 @@ h1#logo{
 #clouds-small	{ width:3000px; height:100%; background:url(../parallaxTraining/bg-clouds-small.png) repeat-x;}
 #cloud2		{ position:relative; top:-262px; }
 #clouds-big	{ width:4000px; height:100%; background:url(../parallaxTraining/bg-clouds-big.png) repeat-x;}
+
+/*Grass*/
+.grass		{ width:100%; height:262px; overflow:hidden; z-index: 7;}
+#grass-small	{ width:3000px; height:100%; background:url(../parallaxTraining/grass.png) repeat-x;}
+#grass2		{ position:relative; top:-189px; }
+#grass-big	{ width:4000px; height:100%; background:url(../parallaxTraining/grass.png) repeat-x;}
+
+/*Pig*/
+.pig		{ width:100%; height:300px; overflow:hidden; }
+#pig-small	{ width:3000px; height:100%; background:url(../parallaxTraining/pig.png) repeat-x;}
+#pig2		{ position:relative; top:-925px; }
+#pig1		{ position:relative; top:-525px; }
+#pig-big	{ width:4000px; height:100%; background:url(../parallaxTraining/lamb.png) repeat-x;}
+
+
+
  
 #menu a.selected { 
 background:#AAA; 
@@ -94,7 +116,7 @@ border-radius:10px;
 	top:20%; 
 	margin: 0 auto; 
 	position:relative; 
-	background:rgba(255,255,255, 0.3);
+	
 	border-radius:35px; 
 	-moz-border-radius:35px; 
 	-webkit-border-radius:35px; 
@@ -103,10 +125,8 @@ border-radius:10px;
 .inner{ 
 	width:920px; 
 	height:360px; 
-	background:rgba(255, 255, 255, 0.3); 
-	border-radius:30px; 
-	-moz-border-radius:30px;
-	-webkit-border-radius:30px; 
+	 
+	
 	margin:5px; 
 	padding:15px; 
 	top:5px; 

@@ -1,19 +1,30 @@
 .background {
+  /*set image to anything you want, in url() add any image file name or actual url */
   background-image: url(../test.png) repeat;
-  /* background: purple; */
+  /*position is fixed so that image stays in same place*/
   position: fixed;
+  /*width determines how wide the background is, 100% guarantees it fills up screen*/
   width: 100%;
+  /*height determines how long the background is, 300% is more than the height of the page so there will be overflow background when you scroll*/
   height: 300%;
+  /*top and left determines the starting point of an image, 0,0 is top left. unlike a graph the origin begins at top left*/
   top:0;
   left:0;
+  /*z-index makes the background image be the furthest layer, complete background*/
   z-index: -1;
 }
 
 section {
+  /*change font color*/
   color: #fff;
+  /*change font*/
   font-family: arial;
+  /*width is the width of the container your text is in*/
   width: 500px;
+  /*margin controls spacing on all sides of the container*/
   margin: auto;
+  /*change spacing between lines*/
   line-height: 20px;
+  /*change font size*/
   font-size: 16px;
 }

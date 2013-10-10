@@ -2,9 +2,24 @@
 <html>
 <head>
 	<link rel="stylesheet" type="text/css" href="styleTemplate.css">
+	<!--Links to a file containing jquery, a library of javascript -->
 	<script src="jquery.js"></script>
+	<!--Can also link to a url that hosts jquery -->
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 	<script>
- 
+		//calls the method parallax when the user scrolls
+ 		$(window).scroll(function(e){
+  			parallax();
+		});
+ 		//function parallax 
+		function parallax(){
+  		var scrolled = $(window).scrollTop();
+  		//set what you want to scroll at a different speed
+  		//here it is .background - this the class name of the div under this class the background image is referenced in the CSS file
+  		$('.background').css('top',-(scrolled*
+  			//set the speed at which to scroll it will scroll at the speed of scroll TIMES speed you decide (here the background scrolls slower since it is multipied by a decima)
+  			0.4)+'px');
+}
  
     </script>
 </head>
@@ -12,10 +27,13 @@
 <body>
 	<!-- Type -->
 	<section>
-		<h1></h1>
-		<p></p>
-		<p></p>
-		<ul>
+		<h1>
+			<!--Type text!-->
+		</h1>
+		<p>
+			<!--Type text!-->
+		</p>
+		<ul><!--This is a bulleted list, type a list of anything you'd like between the <li>TEXT</li> tags!-->
 			<li></li>
 			<li></li>
 			<li></li>
@@ -30,8 +48,11 @@
 			<li></li>
 			<li></li>
 		</ul>
-		<h1></h1>
+		<h1>
+			<!--Type text!-->
+		</h1>
 		<p></p>
+		<!--Insert an image- replace the # with an image url or path-->
 		<img alt="" src="#" /> 
 		<p></p>
 		<p></p>
@@ -39,6 +60,7 @@
 		<img alt="" src="#" /> 
 		<p></p>
 	</section>
+	<!--Don't type anything in between this div!ß-->
 	<div class="background"></div>
 	
 </body>
